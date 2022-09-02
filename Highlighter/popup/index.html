@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="title">Text Highlighter</h2>
+    <p class="instructions">
+        How to use this extension:
+    <ol>
+        <li>Select the text on the page that you want to highlight</li>
+        <li>Pick the colour for the highlight using the colour picker</li>
+        <li>Press Highlight Button!</li>
+    </ol>
+    </p>
+    <div class="color-input">
+        <h3>Pick the color: </h3>
+        <input type="color" id="highlight-color" value="#ffff00">
+    </div>
+    <Button id="Highlight">Highlight</Button>
+    <h4>Download All the highlighted text:</h4>
+    <Button id="download"> <img src="/assets/icons/download.png" alt="">Download Text</Button>
+    <h4>Copy the text to clipboard:</h4>
+    <Button id="copy"> <img id="clipboard" src="/assets/icons/copy.png" alt="">Copy to Clipboard</Button>
+</body>
+<script src="popup.js"></script>
+
+</html>

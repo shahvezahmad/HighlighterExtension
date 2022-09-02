@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Text Highlighter",
+  "version": "0.0.1",
+  "permissions": ["cookies"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScripts/main.js", "contentScripts/highlight.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "Highlight the selected Text"
+  }
+}
